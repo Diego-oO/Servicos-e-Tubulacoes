@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços e Tubulações</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-container" class="container">
+    <h1>Serviços e Tubulações</h1>
+    <form id="login-form">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div id="main-container" class="container hidden">
+    <h1>Cadastro de Pedidos</h1>
+    <form id="order-form">
+      <label for="client-name">Nome do Cliente:</label>
+      <input type="text" id="client-name" required>
+      
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" required>
+      
+      <label for="description">Descrição:</label>
+      <textarea id="description" required></textarea>
+      
+      <button type="submit">Cadastrar Pedido</button>
+    </form>
+
+    <h2>Pedidos Registrados</h2>
+    <ul id="orders-list"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
